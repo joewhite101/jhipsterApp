@@ -1,0 +1,13 @@
+{
+  "common": {
+    "couldNotFetchData": "Unfortunately we could not fetch entity data"
+  },
+  "entities": {
+    "conference": {
+      "noItems": "No conferences available",
+      "id": "ID",
+      "name": "entities.conference.name",
+      "location": "entities.conference.location"
+    }
+  }
+}

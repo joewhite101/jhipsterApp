@@ -9,14 +9,18 @@ components:
     healthCheckPath: /actuator/health
     dbms: mysql
     roles:
-    - name: jhipsterApp-admin
-      code: "jhipsterApp-admin"
-# entando-needle-descriptor-add-roles - Entando blueprint will add roles here
+      - name: jhipsterApp-admin
+        code: 'jhipsterApp-admin'
+      - name: conference-admin
+        code: 'conference-admin'
+    # entando-needle-descriptor-add-roles - Entando blueprint will add roles here
 
     permissions: []
 
-  widgets:
-# entando-needle-descriptor-add-widgets - Entando blueprint will add widget bundle files here
+  widgets: -ui/widgets/conference/tableWidget/table-widget.yaml
+    -ui/widgets/conference/detailsWidget/details-widget.yaml
+    -ui/widgets/conference/formWidget/form-widget.yaml
+  # entando-needle-descriptor-add-widgets - Entando blueprint will add widget bundle files here
 
   pageModels:
 

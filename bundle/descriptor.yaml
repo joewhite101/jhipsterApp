@@ -4,7 +4,7 @@ description: This is the jhipsterApp bundle
 
 components:
   service:
-    image: FIXME
+    image: jwhite101/jhipsterapp
     ingressPath: /jhipsterApp
     healthCheckPath: /actuator/health
     dbms: mysql

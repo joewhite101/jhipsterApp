@@ -1,0 +1,25 @@
+version: entando.org/v1alpha1
+code: jhipsterApp_bundle
+description: This is the jhipsterApp bundle
+
+components:
+  service:
+    image: FIXME
+    ingressPath: /jhipsterApp
+    healthCheckPath: /actuator/health
+    dbms: mysql
+    roles:
+    - name: jhipsterApp-admin
+      code: "jhipsterApp-admin"
+# entando-needle-descriptor-add-roles - Entando blueprint will add roles here
+
+    permissions: []
+
+  widgets:
+# entando-needle-descriptor-add-widgets - Entando blueprint will add widget bundle files here
+
+  pageModels:
+
+  contentTypes:
+
+  contentModels:
